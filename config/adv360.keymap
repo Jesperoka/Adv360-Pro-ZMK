@@ -28,6 +28,49 @@
       };
     };
 
+     macros {
+        _DQT: _DQT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DQT>
+                , <&macro_tap &kp SPACE 
+                ;
+        };
+        _SQT: _SQT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp SQT>
+                , <&macro_tap &kp SPACE 
+                ;
+        };
+        _GRAVE: _GRAVE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp GRAVE>
+                , <&macro_tap &kp SPACE> 
+                ;
+        };
+        _XOR: _XOR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp CARET>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+        _NOT: _NOT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp TILDE>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+    };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -51,11 +94,11 @@
     };
     fn {
       bindings = <
-        &kp F1 &kp F2 &kp F3  &kp F4  &kp F5    &kp F6  &tog 1                                                  &mo 3 &kp F7    &kp F8   &kp F9   &kp F10    &kp F11   &kp F12
-        &trans &trans &trans  &trans  &kp FSLH  &trans  &none                                                   &none &kp GRAVE &kp AMPS &kp PIPE &kp TILDE  &kp CARET &trans
-        &trans &trans &kp SQT &kp DQT &kp STAR  &trans  &none      &kp QMARK &kp EXCL  &kp EQUAL &kp SEMI       &none &kp LEFT  &kp DOWN &kp UP   &kp RIGHT  &trans    &trans
-        &trans &trans &trans  &trans  &kp UNDER &trans                       &kp MINUS &kp PLUS                       &trans    &trans   &trans   &trans     &trans    &trans
-        &trans &trans &trans  &trans  &trans              &kp LPAR &kp LBRC  &kp LBKT  &kp RBKT &kp RBRC &kp RPAR               &trans   &trans   &trans     &trans    &trans
+        &kp F1 &kp F2 &kp F3  &kp F4  &kp F5    &kp F6  &tog 1                                                  &mo 3 &kp F7    &kp F8    &kp F9   &kp F10    &kp F11   &kp F12
+        &trans &trans &trans  &trans  &kp FSLH  &trans  &none                                                   &none &_GRAVE   &kp AMPS  &kp PIPE &_NOT      &_XOR     &trans
+        &trans &trans &_SQT   &_DQT   &kp STAR  &trans  &none      &kp QMARK &kp EXCL  &kp EQUAL &kp SEMI       &none &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans    &trans
+        &trans &trans &trans  &trans  &kp UNDER &trans                       &kp MINUS &kp PLUS                       &trans    &kp COLON &trans   &trans     &trans    &trans
+        &trans &trans &trans  &trans  &trans              &kp LPAR &kp LBRC  &kp LBKT  &kp RBKT &kp RBRC &kp RPAR               &trans    &trans   &trans     &trans    &trans
       >;
     };
     mod {
