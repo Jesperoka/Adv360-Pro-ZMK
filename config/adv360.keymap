@@ -34,7 +34,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp DQT>
-                , <&macro_tap &kp SPACE 
+                , <&macro_tap &kp SPACE>
                 ;
         };
         _SQT: _SQT {
@@ -42,7 +42,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp SQT>
-                , <&macro_tap &kp SPACE 
+                , <&macro_tap &kp SPACE>
                 ;
         };
         _GRAVE: _GRAVE {
