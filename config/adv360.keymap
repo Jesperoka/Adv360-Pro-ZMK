@@ -78,9 +78,9 @@
       bindings = <
         &kp ESC   &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                             &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0    &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                              &none &kp Y  &kp U  &kp I     &kp O    &kp P     &kp RA(W)
-        &kp LSHFT &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RALT              &none &kp H  &kp J  &kp K     &kp L    &kp RA(L) &kp RA(Z)
-        &mo 2     &kp Z     &kp X    &kp C    &kp V      &kp B                            &none    &none                                 &kp N  &kp M  &kp COMMA &kp DOT  &kp MINUS &kp RSHFT
-        &kp LCTRL &none     &none    &none    &none                    &kp BSPC &none     &none    &none     &kp ENTER &kp SPACE                &none  &none     &none    &none     &mo 2
+        &kp LSHFT &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT  &kp LGUI &kp RALT              &none &kp H  &kp J  &kp K     &kp L    &kp RA(L) &kp RA(Z)
+        &mo 2     &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp MINUS &kp PLUS                             &kp N  &kp M  &kp COMMA &kp DOT  &kp MINUS &kp RSHFT
+        &kp LCTRL &none     &none    &none    &none                    &kp BSPC &mo 2     &kp FSLH  &kp STAR &kp ENTER &kp SPACE                &none  &none     &none    &none     &mo 2
       >;
     };
     keypad {
