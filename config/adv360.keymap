@@ -4,6 +4,8 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+// TODO: move shift on right-side as well, and the mode key too. macros {
+
 / {
     behaviors {
       #include "macros.dtsi"
@@ -79,9 +81,9 @@
         &kp ESC   &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                             &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0    &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                              &none &kp Y  &kp U  &kp I     &kp O    &kp P     &kp RA(W)
         &kp LSHFT &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT  &kp LGUI &kp RALT              &none &kp H  &kp J  &kp K     &kp L    &kp RA(L) &kp RA(Z)
-        &mo 2     &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp MINUS &kp PLUS                             &kp N  &kp M  &kp COMMA &kp DOT  &kp MINUS &kp RSHFT
-        &kp LCTRL &none     &none    &none    &none                    &kp BSPC &mo 2     &kp FSLH  &kp STAR &kp ENTER &kp SPACE                &none  &none     &none    &none     &mo 2
-      >;
+        &mo 2     &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp MINUS &kp PLUS                             &kp N  &kp M  &kp COMMA &kp DOT  &kp MINUS &mo 2
+        &kp LCTRL &none     &none    &none    &none                    &kp BSPC &mo 2     &kp FSLH  &kp STAR &kp ENTER &kp SPACE                &none  &none     &none    &none     &kp RSHFT
+      >; 
     };
     keypad {
       bindings = <
