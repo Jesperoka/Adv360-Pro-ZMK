@@ -4,8 +4,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-// TODO: move shift on right-side as well, and the mode key too. macros {
-
 / {
     behaviors {
       #include "macros.dtsi"
@@ -97,11 +95,11 @@
     };
     fn {
       bindings = <
-        &kp F1  &kp F2  &kp F3  &kp F4          &kp F5      &kp F6      &none                                                           &mo 3   &kp F7      &kp F8    &kp F9   &kp F10    &kp F11   &kp F12
-        &none   &none   &none   &none           &kp LC(R)   &none       &none                                                           &none   &_GRAVE     &kp AMPS  &kp PIPE &_XOR      &_NOT     &none
-        &none   &none   &_SQT   &_DQT           &kp UNDER   &none       &none           &kp QMARK &kp EXCL  &kp EQUAL &kp SEMI          &none   &kp LEFT    &kp DOWN  &kp UP   &kp RIGHT  &none     &none
-        &none   &none   &none   &kp LC(C)       &kp DLLR    &none                                 &kp MINUS &kp PLUS                            &none       &kp COLON &none    &none      &none     &none
-        &none   &none   &none   &none           &none                       &kp LPAR    &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC  &kp RPAR                    &none     &none    &none      &none     &none
+        &kp F1  &kp F2  &kp F3  &kp F4      &kp F5      &kp F6      &none                                                           &mo 3   &kp F7      &kp F8    &kp F9   &kp F10    &kp F11   &kp F12
+        &none   &none   &none   &none       &kp LC(R)   &none       &none                                                           &none   &_GRAVE     &kp AMPS  &kp PIPE &_XOR      &_NOT     &none
+        &none   &none   &_SQT   &_DQT       &kp UNDER   &none       &none           &kp QMARK &kp EXCL  &kp EQUAL &kp SEMI          &none   &kp LEFT    &kp DOWN  &kp UP   &kp RIGHT  &none     &none
+        &none   &none   &none   &kp LC(C)   &kp DLLR    &none                                 &kp MINUS &kp PLUS                            &none       &kp COLON &none    &none      &none     &none
+        &none   &none   &none   &none       &none                       &kp LPAR    &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC  &kp RPAR                    &none     &none    &none      &none     &none
       >;
     };
     mod {
