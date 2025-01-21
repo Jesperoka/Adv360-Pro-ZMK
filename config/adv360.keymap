@@ -28,7 +28,6 @@
       };
     };
 
-
      macros {
         _DQT: _DQT {
             compatible = "zmk,behavior-macro";
