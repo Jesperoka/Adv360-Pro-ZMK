@@ -26,6 +26,14 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+
+    _SLH: _SLH {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp BSLH>;
+            mods = <MOD_LSFT>;
+    };
+
     };
 
      macros {
@@ -71,12 +79,6 @@
         };
     };
     
-    _SLH: _SLH {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BSLH>;
-            mods = <MOD_LSFT>;
-    };
 
   keymap {
     compatible = "zmk,keymap";
