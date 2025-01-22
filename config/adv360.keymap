@@ -70,6 +70,13 @@
                 ;
         };
     };
+    
+    _SLH: _SLH {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp BSLH>;
+            mods = <MOD_LSFT>;
+    };
 
   keymap {
     compatible = "zmk,keymap";
@@ -79,7 +86,7 @@
         &kp ESC   &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &none                                                              &mo 3    &kp N6 &kp N7      &kp N8    &kp N9   &kp N0    &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &kp LS(TAB)                                                        &kp TAB  &kp Y  &kp U       &kp I     &kp O    &kp P     &kp RA(W)
         &mo 2     &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT  &kp LGUI &kp RALT              &none    &kp H  &kp J       &kp K     &kp L    &kp RA(L) &kp RA(Z)
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp FSLH  &kp STAR                                &kp N  &kp M       &kp COMMA &kp DOT  &kp MINUS &kp RSHFT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp _SLH  &kp STAR                                &kp N  &kp M       &kp COMMA &kp DOT  &kp MINUS &kp RSHFT
         &kp LCTRL &none     &none    &none    &kp LC(D)                &kp BSPC &mo 2     &kp B     &kp W    &kp ENTER &kp SPACE                   &kp LC(U)   &none     &none    &none     &mo 2
       >; 
     };
